@@ -5,7 +5,11 @@ This project was bootstrapped with [Create React App](https://herocars-c3fd4.web
 ## Available Scripts
 
 In the project directory, you can run:
-
+# In this web site you can buy Brand New Cars.
+# You can see you order details if your order is panding the status will Show pndding in the product is Shipped the status will be shipped.
+# You can add review and give start in add review section.
+# The admin can add a product and delete a product.
+# The admin can make an onthe admin in make admin saection.
 ### `npm start`
 
 Runs the app in the development mode.\
