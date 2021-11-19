@@ -1,0 +1,9 @@
+.bold-title{
+    margin-left: 20px;
+}
+.bold-title h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 3rem;
+}
