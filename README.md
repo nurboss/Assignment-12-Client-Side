@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# HeroCars
 
 This project was bootstrapped with [Create React App](https://herocars-c3fd4.web.app/).
 
