@@ -8,7 +8,7 @@ In the project directory, you can run:
 # In this web site you can buy Brand New Cars.
 # MERN Stack project which is fully Mobile responsive with Firebase Authentication System, included Admin Panel, Login system, and Dashboard Functionality for Customers and Admin.
 # Users have to sign in to order any Service or other requests.
-# The admin can add a product and delete a product.
+# Admin can dynamically change Service items and also manage clients.
 # The admin can make an another admin in make admin saection.
 ### `npm start`
 
