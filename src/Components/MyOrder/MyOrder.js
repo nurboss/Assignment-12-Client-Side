@@ -33,7 +33,7 @@ const MyOrders = () => {
     return (
         <div>
             <div className="container bottom">
-                <h1 className="text-center order-text my-3">{user.email} your Orders</h1>
+                <h2 className="text-center fw-bold">Your have {myOrder.length} Orders</h2>
                 <div className="row my-5">
                 {
                     myOrder.map(data => <MyOrderCart

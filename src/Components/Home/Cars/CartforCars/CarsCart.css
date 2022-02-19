@@ -1,3 +1,42 @@
 .cart{
-    width: 300px;
+    width: 254px;
+    height: 289px;
+}
+.toplevel{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.span-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.span-price{    
+    color: #767676;
+    font-size: 0.6rem;
+    margin-top: 10px;
+}
+.year{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.car-title{
+    font-size: 1.5rem;
+}
+.car-price{
+    font-size: 1pc;
+}
+.small-title{
+    font-size: 0.8rem;
+
+}
+.car-btn-new{
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem; 
+    color: #e10a1d;
+    font-weight: 700;
+}
+.car-btn-new:hover{
+    border-bottom: 2px solid red;
 }

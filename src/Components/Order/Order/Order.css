@@ -2,6 +2,15 @@
 .order-from{
     width: 500px;
 }
+.order-from-sec{
+    width: 100%;
+}
+.order-from-sec input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
 .order-from input{
     width: 100%;
     padding: 10px;

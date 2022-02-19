@@ -11,7 +11,6 @@ const SingleDetails = () => {
         .then(res => res.json())
         .then(data => setSingleDetails(data))
     }, [id]);
-    console.log(id);
     const {name, price, img , _id} = singleDetails;
     return (
         <div className="container screen">

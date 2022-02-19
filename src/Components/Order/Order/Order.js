@@ -12,11 +12,12 @@ const Order = () => {
         .then(res => res.json())
         .then(data => setOrderDetails(data))
     }, [id]);
-    console.log(orderDetails);
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         data.status = "Pending..."
+        data.price = orderDetails.price;
+        data.img = orderDetails.img;
         fetch('https://whispering-chamber-86517.herokuapp.com/order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -28,10 +29,17 @@ const Order = () => {
     
     };
 
-    const {name} = orderDetails;
+    const {name, img, price} = orderDetails;
     return (
-        <div className="container mt-5 order-from bottom">
-            <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="container mt-5 order-from-sec bottom">
+            <div className="row">
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                    <img className='img-fluid' src={img} alt="" />
+                    <h1 className='fw-bold ps-5'>{name}</h1>
+                    <h5 className='fw-bold ps-5'>{price}</h5>
+                </div>
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                <form onSubmit={handleSubmit(onSubmit)}>
                 
                 {(user.email || user.displayName) && <input defaultValue={user.displayName} {...register("name")} placeholder="Name" />} <br />
 
@@ -43,9 +51,11 @@ const Order = () => {
                 <input {...register("address")} placeholder="Your Address" /> <br />
 
                 <input type="number" {...register("phone")}  placeholder="Phone" /> <br />
-
+                              
                 <input style={{border:"none"}} className="submit-btn" type="submit" />
             </form>
+                </div>
+            </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ const Cars = () => {
     useEffect(() => {
         fetch('https://whispering-chamber-86517.herokuapp.com/cars')
         .then(res => res.json())
-        .then(data => setServices(data.slice(0, 6)));
+        .then(data => setServices(data.slice(0, 8)));
     }, []);
     return (
         <div className="container mt-5 service-title">

@@ -2,25 +2,29 @@ import React from 'react';
 import './ManageAllOrderCart.css';
 
 const ManageAllOrderCart = (props) => {
-    const {title, email, name, address, phone, _id} = props.sentdata;
+    const {img, price, title, email, name, address, phone, _id} = props.sentdata;
     return (
-        <div className="col-lg-4">
-            <div className="main-text mb-3">
-                <h2>Car: <span className="fw-normal">{title}</span></h2>
-                <h3>Email: <span className="fw-normal">{email}</span></h3>
-                <h3>Name: <span className="fw-normal">{name}</span></h3>
-                <h3>Address: <span className="fw-normal">{address}</span></h3>
-                <h3>Phone: <span className="fw-normal">{phone}</span></h3>
-                <div className="cart-button "> 
-                <button onClick={() => props.funck(_id)} className="btton mt-4">Delete Order</button>
+        <div className='m-ord-cart'>
+                    <div className='img-box img-width'>
+                        <img src={img} alt="" />
+                    </div>
+                    <div className="order-text text-width">
+                        <h3>Car Name : <span className='fw-bold'>{title}</span> </h3>                                          
+                        <h4>Price : {price}</h4>
+                        <h3>Name : {name}</h3>
+                        <h3>Address : {address}</h3>
+                        <h3>Phone : {phone}</h3>
+                        <h3>Email : {email}</h3>
+                        
+                    </div>                   
+                    <div className='btn-width' > 
+                        <button onClick={() => props.sfunck(_id)} className="shipped-btton mt-4">Click here to Shipped</button>
+                        <button onClick={() => props.funck(_id)} className="btton mt-4">Delete Order</button>
+                        
+                    </div>              
                 </div>
-                <div className="cart-button "> 
-                <button onClick={() => props.sfunck(_id)} className="shipped-btton mt-4">Click here to Shipped</button>
-                </div>
-            </div>
-            
-        </div>
     );
 };
 
 export default ManageAllOrderCart;
+
